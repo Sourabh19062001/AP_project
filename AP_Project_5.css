@@ -1,0 +1,87 @@
+body{
+    padding-left: 357px;
+    padding-right: 357px;
+}
+ fieldset{
+     padding-left: 25px;
+     padding-right: 25px;
+     background-color: #e8f9fa;
+     width: 100px;
+     
+ }
+ legend{
+     background-color: #ccf3ff;
+     font-weight: bold;
+     text-align: center;
+     padding: 5px 201px;
+     width:100px;
+ }
+ #title{
+     width: 460px;
+     height: 11px;
+ }
+ .box1{
+     display: flex;
+     justify-content: left;
+ }
+ .box2{
+     display: flex;
+     justify-content: right;
+
+ }
+ #row1{
+     border: 0px;
+     width: 322px;
+ }
+ #row2{
+     border: 2px solid #80d4ff;
+ }
+ #row3{
+     border: 2px solid #80d4ff;
+ }
+ #city{
+     width: 220px;
+     height: 11px;
+ }
+ .accept{
+     width: 497px;
+     padding: 10px 5px;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     background-color: #ccf3ff;
+ }
+ #row4{
+     width: 322px;
+ }
+ #row5{
+     border: 2px solid #80d4ff;
+     padding-left: 7px;
+     padding-right: 35px;
+     padding-top: 7px;
+     padding-bottom: 5px;
+ }
+ .button_area{
+     text-align: center;
+     padding: 10px;
+     margin: 15px;
+     background-color: #ccf3ff;
+ }
+ #submit{
+     color: white;
+     background-color: #809fff;
+     border: 1.5px solid black;
+     border-radius: 5px;
+     padding: 5px;
+     width: 90px;
+ }
+ #reset{
+     color: white;
+     background-color: #809fff;
+     border: 1.5px solid black;
+     border-radius: 5px;
+     padding: 5px;
+     width: 90px;
+ }
+ #rate{
+     width:50px;
+ }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projet 5</title>
+    <script type="text/javascript" src="AP_Project_5.js"></script>
+    <link rel="stylesheet" href="AP_Project_5.css">
+</head>
+<body>
+    <form action="http://www.randyconnolly.com/tests/process.php" method="GET" onsubmit="return handleForm();">
+    <fieldset>
+        <legend>Photo Details</legend>
+        <label for="title">Title</label><br>
+        <input type="text" name="title" id="title"><br>
+        <label for="description">Description</label><br>
+        <textarea rows="4" cols="60" title="description" id="description" name="description"></textarea><br><br>
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan="2" id="row1">
+                        <label for="continent">Continent</label><br>
+                        <select name="continent" id="continent" onchange="countryselection()">
+                            <option value="null">Choose contnent</option>
+                            <option value="Africa">Africa</option>
+                            <option value="Antartica">Antartica</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Europe">Europe</option>
+                            <option value="North America">North America</option>
+                            <option value="South America">South America</option>
+                        </select><br>
+                        <label for="country">Country</label><br>
+                        <select name="country" id="country">
+                            <option value="">First choose continent</option>
+                        </select><br>
+                        <label for="city">City</label><br>
+                        <input type="text" name="city" id="city">
+                    </td>
+                    <td id="row2">
+                        <label for="copywrite" id="copywrite">Copywrite?</label><br>
+                        <input type="radio" name="copywrite?" id="all_rights_reserved" value="All rights reserved">
+                        <label for="all_rights_reserved">All rights reserved</label><br>
+                        <input type="radio" name="copywrite?" id="creative_commons" value="Creative Commons">
+                        <label for="creative_commons" >Creative commons</label>
+                    </td>
+                </tr>
+                <tr>
+                   <td id="row3">
+                     <label for="creative_common_types" id="creativecommontypes">Creative common types</label><br>
+                     <input type="checkbox" name="creative_common_types[]" id="attribution" value="Attribution">
+                     <label for="attribution">Attribution</label><br>
+                     <input type="checkbox" name="creative_common_types[]" id="noncommercial" value="Noncommercial">
+                     <label for="noncommercial">Noncommercial</label><br>
+                     <input type="checkbox" name="creative_common_types[]" id="no_derivative_work" value="No Derivative Work">
+                     <label for="no_derivative_work">No Derivative Works</label><br>
+                     <input type="checkbox" name="creative_common_types[]" id="share_alike" value="Share Alike">
+                     <label for="share_alike">Share Alike</label><br>
+                   </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="accept">
+            <label for="accept">I accept the software license</label>
+            <input type="checkbox" name="accept" id="accept">
+        </div>
+        <div class="table2">
+            <table>
+                <tbody>
+                    <tr>
+                        <td id="row4">
+                            <label for="rate">Rate this photo:</label><br>
+                            <input type="number" id="rate" name="rate" max="10" value="2"><br>
+                            <label for="color">Color Collection:</label><br>
+                            <input type="color" id="color" name="color" value="#ff0000">
+                        </td>
+                        <td id="row5">
+                        <label for="date">Date Taken:</label><br>
+                        <input type="date" id="date" name="date" value="2013-04-17"><br>
+                        <label for="time">Time Taken:</label><br>
+                        <input type="time" id="time" name="time" value="11:01">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="button_area">
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset" id="reset" onclick="return ask()">Clear Form</button>
+        </div>
+    </fieldset>
+    </form>
+</body>
+</html>
